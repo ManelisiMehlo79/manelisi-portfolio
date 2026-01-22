@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js ss-preload" lang="en">
+<html class="ss-preload" lang="en">
 <head>
 
     <!--- basic page needs
@@ -42,6 +42,9 @@
     ================================================== -->
     <div class="s-pagewrap">
 
+        <!-- Mobile Menu Checkbox -->
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" />
+
         <div class="circles">
             <span></span>
             <span></span>
@@ -57,7 +60,7 @@
 
             <div class="header-mobile">
                 <span class="mobile-home-link"><a href="index.html">Luther.</a></span>
-                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+                <label for="mobile-menu-toggle" class="mobile-menu-toggle"><span>Menu</span></label>
             </div>
 
             <div class="row wide main-nav-wrap">
@@ -397,8 +400,9 @@
 
                     <!-- Modal Templates Popup
                     -------------------------------------------- -->
-                    <div id="modal-01" hidden>
+                    <div id="modal-01" class="modal-backdrop">
                         <div class="modal-popup">
+                            <a href="#" class="modal-close">&times;</a>
                             <img src="images/portfolio/gallery/g-fuji.jpg" alt="">
                 
                             <div class="modal-popup__desc">
@@ -414,8 +418,9 @@
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-02" hidden>
+                    <div id="modal-02" class="modal-backdrop">
                         <div class="modal-popup">
+                            <a href="#" class="modal-close">&times;</a>
                             <img src="images/portfolio/gallery/g-lamp.jpg" alt="">
                 
                             <div class="modal-popup__desc">
@@ -430,8 +435,9 @@
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-03" hidden>
+                    <div id="modal-03" class="modal-backdrop">
                         <div class="modal-popup">
+                            <a href="#" class="modal-close">&times;</a>
                             <img src="images/portfolio/gallery/g-rucksack.jpg" alt="">
                 
                             <div class="modal-popup__desc">
@@ -446,8 +452,9 @@
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-04" hidden>
+                    <div id="modal-04" class="modal-backdrop">
                         <div class="modal-popup">
+                            <a href="#" class="modal-close">&times;</a>
                             <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="">
                 
                             <div class="modal-popup__desc">
@@ -462,9 +469,9 @@
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-05" hidden>
+                    <div id="modal-05" class="modal-backdrop">
                         <div class="modal-popup">
-
+                            <a href="#" class="modal-close">&times;</a>
                             <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="">
                 
                             <div class="modal-popup__desc">
@@ -479,8 +486,9 @@
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-06" hidden>
+                    <div id="modal-06" class="modal-backdrop">
                         <div class="modal-popup">
+                            <a href="#" class="modal-close">&times;</a>
                             <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="">
                 
                             <div class="modal-popup__desc">
@@ -502,6 +510,12 @@
                 <div class="row testimonials">
                     <div class="column lg-12" data-animate-block>
         
+                        <!-- Testimonial Radio Controls -->
+                        <input type="radio" name="testimonial-slide" id="testimonial-1" class="testimonial-radio" checked />
+                        <input type="radio" name="testimonial-slide" id="testimonial-2" class="testimonial-radio" />
+                        <input type="radio" name="testimonial-slide" id="testimonial-3" class="testimonial-radio" />
+                        <input type="radio" name="testimonial-slide" id="testimonial-4" class="testimonial-radio" />
+
                         <div class="swiper-container testimonial-slider" data-animate-el>
         
                             <div class="swiper-wrapper">
@@ -568,7 +582,12 @@
             
                             </div> <!-- end swiper-wrapper -->
         
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination testimonial-pagination">
+                                <label for="testimonial-1" class="testimonial-dot"></label>
+                                <label for="testimonial-2" class="testimonial-dot"></label>
+                                <label for="testimonial-3" class="testimonial-dot"></label>
+                                <label for="testimonial-4" class="testimonial-dot"></label>
+                            </div>
         
                         </div> <!-- end swiper-container -->
         
@@ -646,10 +665,6 @@
     </div> <!-- end -s-pagewrap -->
 
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
 </body>
 </html>
