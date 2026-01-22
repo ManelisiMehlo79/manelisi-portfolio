@@ -497,7 +497,9 @@ header {
 .contact {
     width: 100%;
     padding: 100px;
-    background: linear-gradient(135deg, #E4E4E7 0%, #E4E4E7 50%, #E4E4E7 100%), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="50" height="50" fill="none" stroke="rgba(255,140,0,0.05)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/></svg>');
+    background: linear-gradient(135deg, rgba(228, 228, 231, 0.55) 0%, rgba(228, 228, 231, 0.55) 50%, rgba(228, 228, 231, 0.55) 100%), url('team.png');
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
@@ -767,89 +769,40 @@ footer::before {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header {
-        padding: 20px 30px;
+        padding: 20px 50px;
     }
 
     .home,
     .about,
     .portfolio,
     .contact {
-        padding: 60px 30px;
-    }
-
-    .content {
-        max-width: 100%;
+        padding: 80px 50px;
     }
 
     .content h2 {
-        font-size: 2em;
-    }
-
-    .content h4 {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     .about h3,
     .portfolio h3,
     .contact h3 {
-        font-size: 2em;
-        margin-bottom: 40px;
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
     }
 
-    .about-content {
-        padding: 30px;
+    .logo {
+        font-size: 1.5em;
     }
 
-    .about-text p {
-        font-size: 1em;
-    }
-
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 12px;
-    }
-
-    .skill-tag {
-        padding: 12px 20px;
-        font-size: 0.9em;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .portfolio-item {
-        margin: 0 auto;
-        max-width: 400px;
-    }
-
-    .portfolio-img-wrapper {
-        height: 160px;
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .contact-form {
-        padding: 30px;
-    }
-
-    .contact-item {
-        padding: 25px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    footer {
-        padding: 40px 30px;
+    .logo h2 {
+        font-size: 1.2em;
     }
 
     .navigation {
@@ -857,7 +810,333 @@ footer::before {
     }
 
     .btn-talk {
+        padding: 8px 20px;
+        font-size: 0.9em;
+    }
+
+    .home,
+    .about,
+    .portfolio,
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .content h2 {
+        font-size: 1.8em;
+    }
+
+    .content h4 {
+        font-size: 1.3em;
+    }
+
+    .content p {
+        font-size: 0.95em;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-group a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+        margin-left: 0 !important;
+    }
+
+    .social-icons {
+        bottom: 20px;
+    }
+
+    .about h3,
+    .portfolio h3,
+    .contact h3 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        padding: 25px;
+        background: rgba(228, 228, 231, 0.95);
+    }
+
+    .about-text p {
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+
+    .about-skills h4 {
+        font-size: 1.2em;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .skill-tag {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-tag i {
+        font-size: 2em;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-item {
+        margin: 0;
+        max-width: 100%;
+        background: rgba(228, 228, 231, 0.95);
+    }
+
+    .portfolio-img-wrapper {
+        height: 200px;
+    }
+
+    .portfolio-info {
+        padding: 20px;
+    }
+
+    .portfolio-info h4 {
+        font-size: 1.2em;
+    }
+
+    .view-btn {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info {
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 20px;
+        background: rgba(228, 228, 231, 0.95);
+    }
+
+    .contact-item i {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5em;
+    }
+
+    .contact-form {
+        padding: 25px;
+        background: rgba(228, 228, 231, 0.95);
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        padding: 15px 35px;
+        font-size: 1em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content p {
+        font-size: 0.9em;
+    }
+
+    .footer-social {
+        gap: 10px;
+    }
+
+    .footer-social a {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    .btn-talk {
         padding: 8px 25px;
         font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 1.3em;
+    }
+
+    .home,
+    .about,
+    .portfolio,
+    .contact {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    .content h4 {
+        font-size: 1.1em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+        padding: 10px 0 20px 0;
+    }
+
+    .btn-group a {
+        padding: 10px 15px;
+        font-size: 0.85em;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 15px;
+    }
+
+    .social-icons a i {
+        font-size: 0.8em;
+    }
+
+    .about h3,
+    .portfolio h3,
+    .contact h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .about h3 span::after,
+    .portfolio h3 span::after,
+    .contact h3 span::after {
+        width: 60px;
+        height: 3px;
+    }
+
+    .about-content {
+        padding: 20px;
+    }
+
+    .about-text p {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .about-skills h4 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+        gap: 8px;
+    }
+
+    .skill-tag {
+        width: 45px;
+        height: 45px;
+    }
+
+    .skill-tag i {
+        font-size: 1.8em;
+    }
+
+    .portfolio-img-wrapper {
+        height: 180px;
+    }
+
+    .portfolio-info {
+        padding: 15px;
+    }
+
+    .portfolio-info h4 {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+
+    .portfolio-info p {
+        font-size: 0.85em;
+    }
+
+    .view-btn {
+        padding: 10px 20px;
+        font-size: 0.85em;
+    }
+
+    .contact-item {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .contact-item i {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3em;
+    }
+
+    .contact-item h4 {
+        font-size: 1.05em;
+    }
+
+    .contact-item p {
+        font-size: 0.9em;
+    }
+
+    .contact-form {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+    .contact-form textarea {
+        min-height: 100px;
+    }
+
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 0.95em;
+    }
+
+    .footer-social a {
+        width: 35px;
+        height: 35px;
+    }
+
+    footer {
+        padding: 25px 15px;
     }
 }
