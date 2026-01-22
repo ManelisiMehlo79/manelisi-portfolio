@@ -366,7 +366,7 @@ header {
 .portfolio-img-wrapper {
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -379,7 +379,7 @@ header {
 }
 
 .portfolio-item:hover .portfolio-img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .portfolio-placeholder {
@@ -810,7 +810,7 @@ footer::before {
     }
 
     .portfolio-img-wrapper {
-        height: 220px;
+        height: 160px;
     }
 
     .contact-content {
